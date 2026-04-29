@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 
 interface TournamentHeaderProps {
   title: string;
@@ -26,6 +27,19 @@ export default function TournamentHeader({
   onTabChange,
 }: TournamentHeaderProps) {
   const router = useRouter();
+  const [showToast, setShowToast] = useState(false);
+
+  useEffect(() => {
+    if (showToast) {
+      const timer = setTimeout(() => setShowToast(false), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [showToast]);
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setShowToast(true);
+  };
 
   const handleBack = () => {
     if (activeTab !== 'Overview') {
@@ -48,9 +62,27 @@ export default function TournamentHeader({
           </svg>
           <span className="hidden lg:block">Back</span>
         </button>
-        <button className="w-8 h-8 rounded-full bg-[var(--bg-surface)] flex items-center justify-center">
-          <Image src="/share.svg" alt="Share" width={20} height={20} />
-        </button>
+        <div className="relative flex items-center justify-center">
+          {showToast && (
+            <div className="absolute right-0 top-full mt-2 z-[100] w-max bg-[var(--accent-green)] text-white px-5 py-3 rounded-lg shadow-xl flex items-center gap-4 transition-all duration-300">
+              <span className="text-sm font-bold tracking-wide">Link copied to clipboard!</span>
+              <button 
+                onClick={() => setShowToast(false)} 
+                className="text-white hover:opacity-75 transition-opacity flex items-center justify-center font-bold"
+              >
+                <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 1L1 13M1 1L13 13" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          )}
+          <button 
+            className="w-8 h-8 rounded-full bg-[var(--bg-surface)] flex items-center justify-center"
+            onClick={handleCopyLink}
+          >
+            <Image src="/share.svg" alt="Share" width={20} height={20} />
+          </button>
+        </div>
       </div>
 
       {/* Banner */}
