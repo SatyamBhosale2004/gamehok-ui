@@ -20,7 +20,7 @@ export default function TopBar() {
         <div className="flex items-center rounded-full overflow-hidden bg-green-500 lg:bg-[#00D459] shadow-md lg:shadow-none">
           {/* ORANGE / FLAG COINS */}
           <div className="hidden lg:flex items-center gap-1.5 pl-4 pr-3 py-1.5">
-            <img src="/coin-two.png" className="w-4 h-4" />
+            <img src="/Two Tickets.svg" className="w-4 h-4" />
             <span className="text-xs text-white font-medium">245</span>
           </div>
 
