@@ -30,20 +30,20 @@ export default function SocialCard() {
             {/* stats */}
             <div className="flex gap-6 mt-3">
               <div className="flex flex-col items-center text-white text-xs">
-                <div className="w-10 h-10 rounded-full border-2 border-[#2E9EEE] flex items-center justify-center shadow-[0_0-10px_rgba(59,130,246,0.5)] mb-1">
+                <div className="w-10 h-10 rounded-full border-1 border-[#2E9EEE] flex items-center justify-center shadow-[0_0-10px_rgba(59,130,246,0.5)] mb-1">
                   <img src="/post.png" className="w-5 h-5" />
                 </div>
                 Posts
               </div>
               <div className="flex flex-col items-center text-white text-xs">
-                <div className="w-10 h-10 rounded-full border-2 border-[#FFC39B] flex items-center justify-center shadow-[0_0-10px_rgba(59,130,246,0.5)] mb-1">
+                <div className="w-10 h-10 rounded-full border-1 border-[#FFC39B] flex items-center justify-center shadow-[0_0-10px_rgba(59,130,246,0.5)] mb-1">
                   <img src="/followers.png" className="w-5 h-5" />
                 </div>
                 Followers
               </div>
               <div className="flex flex-col items-center text-white text-xs">
-                <div className="w-10 h-10  rounded-full border-2 border-[#B287FF] flex justify-center items-center shadow-[0_0-10px_rgba(59,130,246,0.5)] mb-1">
-                  <img src="/likes.png" className="w-5 h-   " />
+                <div className="w-10 h-10  rounded-full border-1 border-[#B287FF] flex justify-center items-center shadow-[0_0-10px_rgba(59,130,246,0.5)] mb-1">
+                  <img src="/likes.png" className="w-5 h-5" />
                 </div>
                 Likes
               </div>
