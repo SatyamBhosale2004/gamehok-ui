@@ -42,7 +42,7 @@ export default function TopBar() {
           <div className="w-8 h-8 rounded-full bg-white overflow-hidden flex justify-center items-center">
              <img src="/user.png" className="w-6 h-6 object-cover" />
           </div>
-          <span className="text-sm text-gray-200">Sweta Rani</span>
+          <span className="text-sm text-gray-200">Satyam Bhosale</span>
         </div>
       </div>
     </div>
