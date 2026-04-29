@@ -11,7 +11,7 @@ export default function BouncyBanner() {
       className="relative mt-4 rounded-xl overflow-hidden cursor-pointer active:scale-[0.98] transition"
     >
       {/* BACKGROUND */}
-      <img src="/bouncybird.png" className="w-full h-[120px] object-cover" />
+      <img src="/bouncybird.png" className="w-full h-[120px] lg:h-[140px] xl:h-[160px] object-cover" />
 
       {/* CONTENT */}
       <div className="absolute inset-0 p-4 flex flex-col justify-between">

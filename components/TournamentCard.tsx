@@ -25,11 +25,11 @@ export default function TournamentCard() {
       </div>
 
       {/* CONTENT */}
-      <div className="px-3 pt-3 pb-4 text-white relative">
-        <h3 className="font-semibold text-sm">Crown Conquest</h3>
+      <div className="px-3 pt-3 pb-4 lg:px-4 lg:pt-4 lg:pb-5 text-white relative">
+        <h3 className="font-semibold text-sm lg:text-base">Crown Conquest</h3>
 
         {/* Tags (more subtle) */}
-        <div className="flex gap-2 mt-2 text-[11px]">
+        <div className="flex gap-2 mt-2 text-[11px] lg:text-xs">
           <span className="bg-[#0f3d2b] px-2 py-1 rounded-md text-white">
             BGMI
           </span>
@@ -40,7 +40,7 @@ export default function TournamentCard() {
 
           <span className="bg-[#0f3d2b] px-2 py-1 rounded-md text-white flex items-center gap-1">
             Entry-Free
-            <img src="/coin-two.png" className="w-3 h-3" />
+            <img src="/coin-two.png" className="w-3 h-3 lg:w-4 lg:h-4" />
           </span>
         </div>
 

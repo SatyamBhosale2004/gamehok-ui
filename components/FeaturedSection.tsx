@@ -12,14 +12,14 @@ export default function FeaturedSection() {
       </div>
 
       {/* Horizontal Scroll */}
-      <div className="flex gap-3 overflow-x-auto no-scrollbar scroll-smooth select-none snap-x snap-mandatory">
-        <div className="min-w-[88%] flex-shrink-0 snap-start">
+      <div className="flex gap-3 lg:gap-4 overflow-x-auto no-scrollbar scroll-smooth select-none snap-x snap-mandatory">
+        <div className="min-w-[88%] lg:min-w-[calc(50%-8px)] flex-shrink-0 snap-start">
           <TournamentCard />
         </div>
-        <div className="min-w-[88%] flex-shrink-0 snap-start">
+        <div className="min-w-[88%] lg:min-w-[calc(50%-8px)] flex-shrink-0 snap-start">
           <TournamentCard />
         </div>
-        <div className="min-w-[88%] flex-shrink-0 snap-start">
+        <div className="min-w-[88%] lg:min-w-[calc(50%-8px)] flex-shrink-0 snap-start">
           <TournamentCard />
         </div>
       </div>
