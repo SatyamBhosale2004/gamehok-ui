@@ -31,7 +31,7 @@ export default function BouncyBanner() {
 
           {/* BOUNCY BIRD */}
           <h2
-            className="py-1 text-[18px] leading-none "
+            className="py-1 text-[18px] leading-none font-bold "
             style={{
               fontFamily: "Irish Grover",
               color: "#8F4216",

@@ -13,11 +13,11 @@ export default function HighlightsSection() {
       </div>
 
       {/* SCROLL */}
-      <div className="flex gap-3 overflow-x-auto scrollbar-hide select-none snap-x snap-mandatory">
+      <div className="flex gap-3 overflow-x-auto scrollbar-hide scroll-smooth select-none">
         {highlights.map((item, i) => (
           <div key={i} className="min-w-[220px]">
             {/* IMAGE */}
-            <div className="h-32 rounded-xl overflow-hidden flex-shrink-0 snap-start">
+            <div className="h-32 rounded-xl overflow-hidden">
               <img src={item.img} className="w-full h-full object-cover" />
             </div>
 

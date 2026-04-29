@@ -1,12 +1,9 @@
 export default function TournamentCard() {
   return (
-    <div className="bg-[#06251a] rounded-xl overflow-hidden relative border border-[#0f3d2b] shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
+    <div className="bg-[#001208] rounded-xl overflow-hidden relative border border-[#0f3d2b] shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
       {/* IMAGE */}
       <div className="relative">
-        <img
-          src="/tournament.png"
-          className="w-full h-44 object-cover"
-        />
+        <img src="/tournament.png" className="w-full h-44 object-cover" />
 
         {/* Registration */}
         <div className="absolute top-3 left-3 bg-black/60 text-white text-[11px] px-3 py-1 rounded-full backdrop-blur-sm">
