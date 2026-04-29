@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black flex justify-center lg:justify-start pb-16 lg:pb-0">
       {/* Desktop Sidebar */}
-      <SideBar />
+      <SideBar activePage="home" />
 
       {/* Main Content Area */}
       <div className="w-full flex-1 lg:ml-[240px] flex flex-col bg-[#001208] max-w-[1440px]">
